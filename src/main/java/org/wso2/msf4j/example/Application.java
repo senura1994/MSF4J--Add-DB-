@@ -19,9 +19,7 @@ package org.wso2.msf4j.example;
 import org.wso2.msf4j.MicroservicesRunner;
 
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+
 
 /**
  * Application entry point.
@@ -32,7 +30,7 @@ public class Application {
 
 
         new MicroservicesRunner()
-                .deploy(new HelloService(),new CourseService())
+                .deploy(new HelloService())
                 .start();
     }
 }

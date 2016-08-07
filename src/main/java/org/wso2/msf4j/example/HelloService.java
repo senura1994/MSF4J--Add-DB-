@@ -25,6 +25,9 @@ import javax.ws.rs.POST;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.com.dao.BankDetailsDAO;
+import com.model.BankDetails;
+
 import java.util.ArrayList;
 
 
@@ -43,7 +46,15 @@ public class HelloService {
     @Path("/{name}")
     public String hello(@PathParam("name") String name) {
         System.out.println("Hello");
-        return "Hello " + name;
+        BankDetails bd = new BankDetails();
+        if (name != null) {
+            bd.setDesc(name);
+        } else {
+            bd.setDesc("No Name");
+        }
+        BankDetailsDAO bDao = new BankDetailsDAO();
+        bDao.insertData(bd);
+        return "Done " + name;
     }
 
 

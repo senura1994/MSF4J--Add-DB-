@@ -10,7 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle:ojdbc14:10.2.0.4.0" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:6.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.wso2.msf4j:msf4j-core:2.0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.wso2.carbon.messaging:org.wso2.carbon.messaging:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.wso2.carbon.transport:org.wso2.carbon.transport.http.netty:2.1.2" level="project" />
