@@ -32,7 +32,7 @@ public class Application {
 
 
         new MicroservicesRunner()
-                .deploy(new HelloService(),new DbService())
+                .deploy(new HelloService(),new CourseService())
                 .start();
     }
 }
